@@ -9,8 +9,12 @@
 </body>
 </html>
 <script>
-    let a=+prompt('nhập a')
-    let b=(a/100)+1;
-    document.getElementById('a1').innerText='thế kỷ'+b;
+    let a=+prompt('số năm')
+    if(a%100===0){
+        document.getElementById('a1').innerHTML="thế kỷ"+Math.floor(a/100)
+    }
+    else {
+        document.getElementById('a1').innerHTML="thế kỷ"+(Math.floor(a/100)+1)
+    }
 
 </script>
